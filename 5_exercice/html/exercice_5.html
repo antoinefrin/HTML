@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/Users/antoinefrin/TD-form/html_5/5_exercice/css/exercice_5.css">
+    <title>html:5 exercice 5</title>
+  </head>
+  <body>
+        <!-- Créez une page web qui fait la somme d'un nombre indéterminé d'entiers. -->
+
+            <p id="paragraphe">Saisissez un nombre d'entier que vous ajoutez à chaque saisie,</br>
+                cette valeur sera enregistrer dans un tableau,</br>
+                    afin de pouvoir éffectuer la somme des valeurs.</br></br>
+                    Vous pouvez saisir autant de valeur que vous souhaitez. </p>
+            <input type="text" id="nombre" value="" placeholder="Saisir une valeur">
+            <input type="submit" value="Ajouter" onclick="ajoutNombreTab()">
+
+            <p>Calculer la somme de vos saisie:</p>
+            <input type="submit" id="calculer" value="Calculer" onclick="somme()">
+
+            <!-- <p> Effacer vos saisie:</p> -->
+           <!-- <input type="submit" id="effacerSaisie" value="Effacer" onclick="effacerSaisie()"> -->
+            <input type="reset" name="reset" id="reset" onclick="effacerSaisie()">
+
+            <p id="result"></p>
+
+    <script type="text/javascript" src="/Users/antoinefrin/TD-form/html_5/5_exercice/js/exercice_5.js"></script>
+  </body>
+</html>

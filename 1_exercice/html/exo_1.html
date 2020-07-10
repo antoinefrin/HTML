@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html 5 exercice 1</title>
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/Users/antoinefrin/TD-form/html_5/1_exercice/css/exo_1.css">
+    </head>
+
+    <body>
+
+        <!-- Créer une page web qui permet d’afficher l’image suivante : image.png
+                L’utilisateur doit être capable de:
+                1. modifier la couleur du fond de l’image à partir une sélection de 10 couleurs;
+                2. modifier la largeur et la longueur de l’image;
+                3. modifier la position de l’image dans la page. -->
+
+        <div id="div1">
+
+            <p>Cliquez sur l'un des boutons pour changer la couleur du background de l'image.</p> 
+                <button class="button1" onclick = "changeColor('blue');">Bleu</button>
+                <button class="button2" onclick = "changeColor('green');">Vert</button> 
+                <button class="button3" onclick = "changeColor('red');">Rouge</button>
+                <button class="button4" onclick = "changeColor('purple');">Pourpre</button>
+                <button class="button5" onclick = "changeColor('orangered');">Orange</button>
+                <button class="button6" onclick = "changeColor('turquoise');">Turquoise</button>
+                <button class="button7" onclick = "changeColor('brown');">Marron</button>
+                <button class="button8" onclick = "changeColor('greenyellow');">Vert clair</button>
+                <button class="button9" onclick = "changeColor('violet');">Violet</button>
+                <button class="button10" onclick = "changeColor('rgb(214, 214, 5)');">Jaune</button>
+
+            <p>Saisissez une valeur en px pour changer la taille de l'image.</p> 
+                
+                <input type="text" id="picsWidth" name="largeur" value="" placeholder="Largeur">
+                <!-- <input type="submit" value="Envoyer" onclick="changeLargeur()"> -->
+                <input type="text" id="picsHeight" name="hauteur" value="" placeholder="Hauteur">
+                <input type="submit" value="Envoyer" onclick="changeSize()">
+                <!-- <input type="submit" value="Envoyer" onclick="changeHauteur()"> -->
+
+            <p>Saisissez une valeur en px pour la position top et left afin de déplacer l'image dans la page.</p> 
+                <input type="text" id="positionTop" name="top" value="" placeholder="Top">
+                <input type="text" id="positionLeft" name="left" value="" placeholder="Left">
+                <input type="submit" value="Envoyer" onclick="changePosition()">
+
+        </div>
+
+        <div id="image">
+            <img id="photo" alt="imagePng" src="/Users/antoinefrin/TD-form/html_5/1_exercice/img/image.png">
+        </div>
+
+        <script type="text/javascript" src="/Users/antoinefrin/TD-form/html_5/1_exercice/js/exo_1.js"></script>
+
+    </body>
+</html>

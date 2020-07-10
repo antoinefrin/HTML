@@ -1,0 +1,12 @@
+#titre{
+    text-align: center;
+}
+#calculateur{
+    width: 500px;
+    height: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-style: groove;
+    border-color: black;
+}

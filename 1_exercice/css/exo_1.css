@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+}
+#photo{
+    position: relative;
+}
+#div1{
+    text-align:center;
+}
+.button1{
+    color: blue;
+}
+.button2{
+    color: green;
+}
+.button3{
+    color: red;
+}
+.button4{
+    color: purple;
+}
+.button5{
+    color: orangered;
+}
+.button6{
+    color: turquoise;
+}
+.button7{
+    color: brown;
+}
+.button8{
+    color: greenyellow;
+}
+.button9{
+    color: violet;
+}
+.button10{
+    color: rgb(214, 214, 5);
+}

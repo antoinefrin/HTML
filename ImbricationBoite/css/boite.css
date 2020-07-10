@@ -1,0 +1,57 @@
+#boite1{
+    border: 5px solid blue;
+    background-color: red;
+    width: 500px;
+    height: 500px;
+}
+
+#boite2{
+    border: 5px solid white;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    margin-top: -400px;
+    margin-left: 100px;
+}
+
+#boite3{
+    border: 5px solid red;
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+    margin-top: -200px;
+    margin-left: 150px;
+}
+
+#boite4{
+    border: 5px solid green;
+    background-color: rgb(247, 200, 113);
+    width: 230px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+#boite5{
+    border: 5px solid rgb(1, 1, 87);
+    background-color: rgb(118, 245, 118);
+    width: 250px;
+    height: 250px;
+    margin-top: -150px;
+    margin-left: 60px;
+    position: relative;
+    z-index: 3;
+}
+
+#boite6{
+    border: 5px solid blue;
+    background-color: red;
+    width: 260px;
+    height: 250px;
+    margin-top: -430px;
+    margin-left: 170px;
+    position: relative;
+    z-index: 1;
+}

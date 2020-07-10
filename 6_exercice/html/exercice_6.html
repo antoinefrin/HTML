@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/Users/antoinefrin/TD-form/html_5/6_exercice/css/exercice_6.css">
+        <title>html:5 exercice 6</title>
+    </head>
+    <body>
+        <!-- Calculer le salaire d'une personne sur base de son salaire brut en décomptant les frais suivants:
+                    ● Impôts sur le revenu : 18%
+                    ● Assurance employé : 7%
+                    ● Régime de pensions du Canada : 5%
+
+                Les personnes peuvent recevoir comme supplément un bonus de 100$ ou une allocation de 150$.
+
+                Il est possible de recevoir des réductions sur les impôts sur le revenu sous certaines conditions :
+                    ● Si le travailleur est une femme, elle reçoit 2% de réduction.
+                    ● Si le travailleur a 3 personnes à charge, il reçoit 1% de réduction.
+                    ● Si le travailleur a 4 personnes à charge, il reçoit 2% de réduction. -->
+
+        <h1 id="titre" >Générateur du salaire brut après déduction:</h1>
+
+        <div id="calculateur">
+            <p>Salaire brut d'une personne: 
+                <input type="text" id="salaireBrut" value="" placeholder="ex: 1800" required>
+                <input type="submit" value="Valider" onclick="salaireMoinsFrais()">
+            </p><br>
+
+            <p>Impôts sur le revenu : taux de 18% soit <input id="montantImpots" disabled></p>
+
+            <p>Assurance employé : taux de 7% soit <input id="montantAssurance" disabled></p>
+
+            <p>Régime de pensions du Canada : taux de 5% soit <input id="montantPensions" disabled></p>
+
+            <p>Montant des prélèvements<br> (sans abattement sur l'impots) soit:<br>
+                <input id="montantDesPrelevement" disabled></p>
+
+            <p>Montant du salaire brut après prélèvements<br> (sans abattement sur l'impots) soit:<br>
+                <input id="montantSalaireApresPrelevement" disabled></p><br>
+
+            <label for="genre">Genre:</label>
+            <select id="genre" required>
+                <option value="">Définir</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+            </select>
+            <br><br>
+
+            <label for="nombrePersonneCharge">Nombre de personne à charge:</label>
+            <select id="nombrePersonneCharge" required>
+                <option value="">Définir</option>
+                <option value="personneSeul">Personne seul</option>
+                <option value="troisPersonnesCharge">3 personnes à charge</option>
+                <option value="quatrePersonnesCharge">4 personnes à charge </option>
+            </select>
+            <br><br>
+
+            <label for="typePrime">Type de prime:</label>
+            <select id="typePrime" required>
+                <option value="">Définir</option>
+                <option value="centDollars">Un bonus de 100$</option>
+                <option value="centCinquanteDollars">Une allocation de 150$</option>
+            </select>
+            <br><br>
+
+            <p>Calculer le salaire brut<br> (Avec déduction des frais et d'éventuelle abattement fiscal):<br>
+                <input type="submit" value="Calculer" onclick="abattementImpots()" ></p><br>
+
+
+            <p>Salaire brut<br> (Après déduction des frais et d'éventuelle abattement fiscal):
+                <input id="salaireBrutFinal" disabled>
+            </p>
+
+        </div>
+
+        <script type="text/javascript" src="/Users/antoinefrin/TD-form/html_5/6_exercice/js/exercice_6.js"></script>
+    </body>
+</html>
